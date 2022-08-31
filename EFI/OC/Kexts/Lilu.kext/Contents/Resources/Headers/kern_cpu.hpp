@@ -90,6 +90,9 @@ namespace CPUInfo {
 		CPU_MODEL_COMETLAKE_S    =  0xA5, /* desktop CometLake */
 		CPU_MODEL_COMETLAKE_Y    =  0xA5, /* aka 10th generation Amber Lake Y */
 		CPU_MODEL_COMETLAKE_U    =  0xA6,
+		CPU_MODEL_ROCKETLAKE_S   =  0xA7, /* desktop RocketLake */
+		CPU_MODEL_TIGERLAKE_U    =  0x8C,
+		CPU_MODEL_ALDERLAKE_S    =  0x97,
 	};
 
 	/**
@@ -120,6 +123,9 @@ namespace CPUInfo {
 		CannonLake,
 		IceLake,
 		CometLake,
+		RocketLake,
+		TigerLake,
+		AlderLake,
 		MaxGeneration
 	};
 
@@ -407,11 +413,6 @@ namespace CPUInfo {
 	 *  @return true if supported
 	 */
 	EXPORT bool getCpuid(uint32_t no, uint32_t count, uint32_t *a, uint32_t *b=nullptr, uint32_t *c=nullptr, uint32_t *d=nullptr);
-
-	/**
-	 *  Is haswell eligible hardware
-	 */
-	EXPORT bool isHaswellEligible();
 }
 
 #endif /* kern_cpu_h */
