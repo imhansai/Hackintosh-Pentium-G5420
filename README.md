@@ -8,3 +8,9 @@
 2. 注意针对自己的usb进行定制。可以根据这个仓库进行: https://github.com/corpnewt/USBMap
 
 3. BIOS 目录只针对特定的配置，可以根据 https://dortania.github.io/OpenCore-Install-Guide/ 摸索
+
+## 2023-10-16 
+1. 谨慎升级到Sonoma，博通网卡驱动被移除，需要使用OCLP来处理，但是有「严重的后遗症」  
+远景: https://bbs.pcbeta.com/viewthread-1975545-1-1.html  
+黑锅小兵: https://mp.weixin.qq.com/s/4RosLtK2W7L9T4CJEHgVKw    
+注意⚠️: 由于关闭了SIP,所以会带来一些问题，比如iphone作为摄像头在chrome中无法授权导致无法使用等等
